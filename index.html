@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script rel="stylesheet" href="style.css"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <title>Responsive Dashboad</title>
 </head>
 <body class="darkmode">
@@ -21,8 +22,81 @@
                         <span class="nav-text">Profile</span>
                     </a>
                 </li>
+
+                <li class="nav-item">
+                    <a href="#">
+                        <i class="fa fa-map nav-icon"></i>
+                        <span class="nav-text">Discover</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#">
+                        <i class="fa fa-arrow-trend-up nav-icon"></i>
+                        <span class="nav-text">Trending</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#">
+                        <i class="fa-solid fa-chart-simple nav-icon"></i>
+                        <span class="nav-text">Analytics</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#">
+                        <i class="fa fa-heart nav-icon"></i>
+                        <span class="nav-text">Favorites</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#">
+                        <i class="fa-solid fa-pen-to-square nav-icon"></i>
+                        <span class="nav-text">Reviews</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#">
+                        <i class="fa-solid fa-gear nav-icon"></i>
+                        <span class="nav-text">Settings</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#">
+                        <i class="fa-solid fa-right-from-bracket nav-icon"></i>
+                        <span class="nav-text">Logout</span>
+                    </a>
+                </li>
             </ul>
         </div>
     </nav>
+
+    <section class="content">
+        <div class="left-content">
+            <div class="search-and-check">
+                <form class="search-box">
+                    <input type="text" placeholder="search event..."/>
+                    <i class="bx bx-search"></i>
+                </form>
+                <div class="interaction-control-mobile interactions">
+                    <i class="fa-regular fa-envelope notified"></i>
+                    <i class="fa-regular fa-bell notified"></i>
+                    <div class="toggle" onclick="switchTheme()">
+                      <div class="mode-icon moon">
+                        <i class="bx bxs-moon"></i>
+                      </div>
+                      <div class="mode-icon sun hidden">
+                        <i class="bx bxs-sun"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
